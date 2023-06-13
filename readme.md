@@ -1,0 +1,1 @@
+[live version](https://www.rossmann.pl/Produkt/Szampony/Garnier-Fructis-Hair-Food-szampon-do-wlosow-wygladzajacy-350-ml,390625,8657)

@@ -1,0 +1,51 @@
+@import url(preflight.css);
+@import '@splidejs/splide/dist/css/splide.min.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+}
+
+@layer components {
+  .h2 {
+    @apply font-courgette text-4xl sm:text-5xl mb-10 text-center;
+  }
+}
+
+@layer utilities {
+}
+
+/* @font-face {
+  font-family: 'Gotham Book';
+  src: url('fonts/Gotham\ Book\ Font.otf');
+} */
+
+/* _____________________________________________________ animations ________________________________________________ */
+
+@keyframes fade-from-left {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-from-right {
+  from {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-from-bottom {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
