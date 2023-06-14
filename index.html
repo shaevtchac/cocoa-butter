@@ -20,7 +20,7 @@
     <div
       class="grid lg:grid-cols-2 mt-10 max-w-[1300px] mx-auto gap-4 w-10/12 items-center"
     >
-      <div>
+      <div data-animation="fade-from-left">
         <p
           class="font-courgette text-4xl text-primary mb-4 [transform:matrix(1.15335746729419,-0.07623766717316,0.07623766717316,1.15335746729419,0,0)]"
         >
@@ -35,6 +35,7 @@
         </div>
       </div>
       <div
+        data-animation="fade-from-right"
         class="grid justify-items-center text-primary auto-rows-min content-center"
       >
         <img src="img/hair-food-logo.png" alt="hair food logo" class="mb-8" />
@@ -76,7 +77,12 @@
 
     <!-- ______________________________________________________ section2 ______________________________________________________ -->
     <div class="mt-20">
-      <p class="h2 text-primary leading-tight">
+      <p
+        data-animation="fade-in"
+        data-duration="1s"
+        data-delay="0s"
+        class="h2 text-primary leading-tight"
+      >
         Nie do jedzenia! <br /><span
           class="text-[0.9em] font-black font-lato text-primary"
           >TYLKO DLA GŁODNYCH WŁOSÓW!</span
@@ -86,7 +92,10 @@
       <div
         class="grid lg:grid-cols-[60%_1fr] w-11/12 mx-auto mt-20 gap-4 justify-items-center"
       >
-        <div class="relative overflow-visible md:text-lg xl:text-xl">
+        <div
+          data-animation="fade-from-left"
+          class="relative overflow-visible md:text-lg xl:text-xl"
+        >
           <svg
             class="absolute fill-secondary w-[300%] sm:w-[150%] xl:w-[130%] -left-[20%] sm:left-0 top-[5%]"
             viewbox="0 0 878.5 510.5"
@@ -119,8 +128,10 @@
             </small>
           </p>
         </div>
-        <div class="relative">
+        <div data-animation="fade-from-right" class="relative">
           <svg
+            data-animation="bounce1"
+            data-delay="1s"
             class="absolute fill-primary"
             viewBox="0 0 53.23 54.69"
             width="132px"
@@ -134,23 +145,33 @@
           />
         </div>
       </div>
-      <svg
-        viewBox="0 0 123.3 64.92"
-        width="180px"
-        class="mx-auto fill-primary -rotate-[20deg]"
-      >
-        <use href="#arrow2"></use>
-      </svg>
+      <div class="mx-auto hover:animate-bounce1 w-min">
+        <svg
+          viewBox="0 0 123.3 64.92"
+          width="180px"
+          class="fill-primary -rotate-[20deg]"
+        >
+          <use href="#arrow2"></use>
+        </svg>
+      </div>
     </div>
 
     <!-- ______________________________________________________ section3 ______________________________________________________ -->
 
     <div class="max-w-[1300px] mx-auto mt-20">
-      <p class="text-primary text-4xl text-center font-black mb-10">
+      <p
+        data-animation="fade-in"
+        data-delay="0s"
+        data-duration="1s"
+        class="text-primary text-4xl text-center font-black mb-10"
+      >
         <span class="text-support">HAIR FOOD</span> COCOA BUTTER
       </p>
       <div class="relative mx-4">
         <svg
+          data-animation="fade-in"
+          data-delay="0s"
+          data-duration="1s"
           class="absolute fill-primary"
           viewBox="0 0 970.42 549.12"
           width="100%"
@@ -160,14 +181,14 @@
           <use href="#frame"></use>
         </svg>
         <div class="grid md:grid-cols-[55%_1fr] items-center p-8 gap-4">
-          <div class="overflow-hidden">
+          <div data-animation="fade-from-left" class="overflow-hidden">
             <img
               src="img/30.jpg"
               alt="cocoa"
               class="w-full transition-transform hover:scale-110 duration-500 relative"
             />
           </div>
-          <div class="text-xl">
+          <div data-animation="fade-from-right" class="text-xl">
             <p>
               <span class="font-black text-primary"
                 >Nowa linia Hair Food Cocoa Butter</span
@@ -189,25 +210,32 @@
           </div>
         </div>
       </div>
-      <svg
-        viewBox="0 0 53.23 54.69"
-        class="mx-auto -scale-x-100 fill-primary my-12"
-        width="131px"
-      >
-        <use href="#arrow1"></use>
-      </svg>
+      <div data-animation="bounce1" data-delay="500ms" class="mx-auto w-min">
+        <svg
+          viewBox="0 0 53.23 54.69"
+          class="-scale-x-100 fill-primary my-12"
+          width="131px"
+        >
+          <use href="#arrow1"></use>
+        </svg>
+      </div>
     </div>
 
     <!-- ______________________________________________________ section4 ______________________________________________________ -->
 
     <div class="max-w-[1300px] mx-auto">
-      <p class="h2 text-primary">
+      <p
+        data-animation="fade-in"
+        data-delay="0s"
+        data-duration="1s"
+        class="h2 text-primary"
+      >
         Wybierając
         <span class="font-lato font-black text-support">FRUCTIS HAIR FOOD </span
         >wspierasz środowisko!
       </p>
       <div class="grid md:grid-cols-2 gap-4 justify-items-center">
-        <div class="px-[5%] self-center">
+        <div data-animation="fade-from-left" class="px-[5%] self-center">
           <div
             class="relative grid place-items-center shadow-[12px_20px] shadow-secondary"
           >
@@ -234,7 +262,7 @@
             <small>*Poza korkiem, barwnikiem i dodatkami.</small>
           </p>
         </div>
-        <div class="px-[5%]">
+        <div data-animation="fade-from-right" class="px-[5%]">
           <img src="img/40.jpg" alt="recykling" />
         </div>
       </div>
@@ -243,7 +271,12 @@
     <!-- ______________________________________________________ section5 ______________________________________________________ -->
 
     <div>
-      <p class="h2 mt-20 text-primary mb-20 relative z-10 leading-snug">
+      <p
+        data-animation="fade-in"
+        data-delay="0s"
+        data-duration="1s"
+        class="h2 mt-20 text-primary mb-20 relative z-10 leading-snug"
+      >
         To nie jedyne zalety <br /><span
           class="font-black text-[0.9em] text-support font-lato"
         >
@@ -252,7 +285,10 @@
       </p>
 
       <div class="grid lg:grid-cols-2 gap-2">
-        <div class="relative z-10 justify-self-center px-4">
+        <div
+          data-animation="fade-from-left"
+          class="relative z-10 justify-self-center px-4"
+        >
           <img
             src="img/pack.png"
             alt="packaging"
@@ -266,37 +302,57 @@
             alt="plastic bottle"
           />
           <div class="grid gap-6">
-            <div class="relative flex items-center gap-4">
+            <div
+              data-animation="fade-from-right"
+              data-delay="500ms"
+              class="relative flex items-center gap-4"
+            >
               <div class="bg-primary px-4 py-2">
                 <p class="text-white">TAK</p>
               </div>
               <p>WEGAŃSKA FORMUŁA*</p>
             </div>
-            <div class="relative flex items-center gap-4">
+            <div
+              data-animation="fade-from-right"
+              data-delay="700ms"
+              class="relative flex items-center gap-4"
+            >
               <div class="bg-primary px-4 py-2">
                 <p class="text-white">TAK</p>
               </div>
               <p>ZATWIERDZONY PRZEZ CRUELTY FREE INTERNATIONAL</p>
             </div>
-            <div class="relative flex items-center gap-4">
+            <div
+              data-animation="fade-from-right"
+              data-delay="900ms"
+              class="relative flex items-center gap-4"
+            >
               <div class="bg-primary px-4 py-2">
                 <p class="text-white">TAK</p>
               </div>
               <p>TESTOWANY DERMATOLOGICZNIE</p>
             </div>
-            <div class="relative flex items-center gap-4">
+            <div
+              data-animation="fade-from-right"
+              data-delay="1100ms"
+              class="relative flex items-center gap-4"
+            >
               <div class="bg-primary px-4 py-2">
                 <p class="text-white">TAK</p>
               </div>
               <p>PODLEGA RECYKLINGOWI**</p>
             </div>
-            <div class="relative flex items-center gap-4">
+            <div
+              data-animation="fade-from-right"
+              data-delay="1300ms"
+              class="relative flex items-center gap-4"
+            >
               <div class="bg-primary px-4 py-2">
                 <p class="text-white">BEZ</p>
               </div>
               <p>SILIKONU - DLA NATURALNYCH W DOTYKU WŁOSÓW</p>
             </div>
-            <div>
+            <div data-animation="fade-in" data-delay="1s" data-duration="1s">
               <p class="relative">
                 <small
                   >*Nie zawiera składników pochodzenia zwierzęcego lub
@@ -321,21 +377,29 @@
 
     <!-- ______________________________________________________ section6 ______________________________________________________ -->
 
-    <div class="max-w-[1300px] mx-auto mt-10 relative w-10/12">
+    <div
+      data-animation="fade-in"
+      data-delay="0s"
+      data-duration="1s"
+      class="max-w-[1300px] mx-auto mt-10 relative w-10/12"
+    >
       <img src="img/50.jpg" alt="fructis hair food" class="mx-auto" />
     </div>
 
     <!-- ______________________________________________________ section7 ______________________________________________________ -->
 
     <div class="mt-20 max-w-[1300px] mx-auto">
-      <p class="h2">
+      <p data-animation="fade-in" data-delay="0s" data-duration="1s" class="h2">
         Skomponuj <span class="text-primary">pielęgnacyjną rutynę</span> dla
         swoich włosów!
       </p>
 
       <div class="max-w-10/12 mx-auto flex flex-wrap gap-6 px-4">
         <!-- col1 -->
-        <div class="relative text-center min-w-[265px] flex-1">
+        <div
+          data-animation="fade-from-left"
+          class="relative text-center min-w-[265px] flex-1"
+        >
           <svg
             viewBox="0 0 41.6 80.64"
             class="absolute -scale-x-100 fill-black top-[267px] left-7 hover:animate-wiggle"
@@ -368,7 +432,12 @@
           />
         </div>
         <!-- col2 -->
-        <div class="relative text-center min-w-[265px] flex-1">
+        <div
+          data-animation="fade-in"
+          data-delay="0s"
+          data-duration="1s"
+          class="relative text-center min-w-[265px] flex-1"
+        >
           <div class="absolute top-[260px] left-0 hover:animate-bounce1">
             <svg
               viewBox="0 0 41.6 80.64"
@@ -404,6 +473,7 @@
         </div>
         <!-- col3 -->
         <div
+          data-animation="fade-from-right"
           class="relative text-center min-w-[265px] flex-1 grid grid-rows-[auto_auto_auto_auto_1fr]"
         >
           <div class="absolute top-[350px] left-1/2 -translate-x-1/2">
@@ -440,10 +510,14 @@
     <!-- ______________________________________________________ section8 ______________________________________________________ -->
 
     <div class="text-center">
-      <p class="h2">
+      <p data-animation="fade-in" data-delay="0s" data-duration="1s" class="h2">
         Poznaj wszystkie <span class="text-primary">superowoce!</span>
       </p>
-      <div class="flex gap-4 flex-wrap justify-center">
+
+      <div
+        data-animation="fade-from-left"
+        class="flex gap-4 flex-wrap justify-center"
+      >
         <div class="grid content-between min-w-[265px]">
           <p class="my-4 font-courgette text-6xl text-banana">Banan</p>
           <p class="mb-3">Odżywcza pielęgnacja do włosów bardzo suchych</p>
@@ -474,7 +548,12 @@
           </div>
         </div>
 
-        <div class="grid content-between min-w-[265px]">
+        <div
+          data-animation="fade-in"
+          data-delay="0s"
+          data-duration="1s"
+          class="grid content-between min-w-[265px]"
+        >
           <p class="my-4 font-courgette text-6xl text-papaya">Papaya</p>
           <p class="mb-3">Regenerujące "menu" do włosów zniszczonych</p>
           <div class="overflow-hidden mx-auto">
@@ -504,7 +583,10 @@
           </div>
         </div>
 
-        <div class="grid content-between min-w-[265px]">
+        <div
+          data-animation="fade-from-right"
+          class="grid content-between min-w-[265px]"
+        >
           <p class="my-4 font-courgette text-6xl text-aloe">Aloe</p>
           <p class="mb-3">
             Nawilżająca pielęgnacja do włosów normalnych i suchych

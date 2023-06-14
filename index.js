@@ -15,8 +15,6 @@ const animationObserver = new IntersectionObserver((entries) => {
     } = entry.target.dataset;
     if (entry.isIntersecting) {
       entry.target.style.animation = `${animation} ${duration} ${timingFunction} ${delay} ${iterationCount} ${direction} ${fillMode}`;
-    } else {
-      entry.target.style.animation = 'none';
     }
   });
 });
