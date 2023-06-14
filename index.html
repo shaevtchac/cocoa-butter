@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="index.css" />
     <script src="index.js" type="module"></script>
   </head>
+
   <body class="mx-auto max-w-[1300px] font-lato">
     <!-- ______________________________________________________ section1 ______________________________________________________ -->
     <div
@@ -25,7 +26,13 @@
         >
           NOWOŚĆ!
         </p>
-        <img src="img/cocoa-butter.jpg" alt="cocoa butter" class="mx-auto" />
+        <div class="mx-auto overflow-hidden">
+          <img
+            src="img/cocoa-butter.jpg"
+            alt="cocoa butter"
+            class="transition-transform hover:scale-110 duration-500"
+          />
+        </div>
       </div>
       <div
         class="grid justify-items-center text-primary auto-rows-min content-center"
@@ -88,7 +95,7 @@
           </svg>
           <img
             width="181px"
-            class="absolute -top-[12%] w-[clamp(120px,28%,181px)]"
+            class="absolute -top-[12%] w-[clamp(120px,28%,181px)] transition-transform hover:scale-110 duration-500"
             src="img/pochodzenie-naturalne-logo.svg"
             alt="pochodzenie naturalne logo"
           />
@@ -120,7 +127,11 @@
           >
             <use href="#arrow1"></use>
           </svg>
-          <img src="img/packshots.png" alt="packaging" />
+          <img
+            src="img/packshots.png"
+            alt="packaging"
+            class="transition-transform hover:scale-110 duration-500"
+          />
         </div>
       </div>
       <svg
@@ -149,8 +160,12 @@
           <use href="#frame"></use>
         </svg>
         <div class="grid md:grid-cols-[55%_1fr] items-center p-8 gap-4">
-          <div>
-            <img src="img/30.jpg" alt="cocoa" class="w-full" />
+          <div class="overflow-hidden">
+            <img
+              src="img/30.jpg"
+              alt="cocoa"
+              class="w-full transition-transform hover:scale-110 duration-500 relative"
+            />
           </div>
           <div class="text-xl">
             <p>
@@ -238,7 +253,11 @@
 
       <div class="grid lg:grid-cols-2 gap-2">
         <div class="relative z-10 justify-self-center px-4">
-          <img src="img/pack.png" alt="packaging" />
+          <img
+            src="img/pack.png"
+            alt="packaging"
+            class="transition-transform hover:scale-110 duration-500"
+          />
         </div>
         <div class="relative xs:text-xl sm:text-2xl px-4">
           <img
@@ -293,7 +312,7 @@
       </div>
       <svg
         viewBox="0 0 40.32 53.76"
-        class="relative mx-auto fill-primary mt-6"
+        class="relative mx-auto fill-primary mt-6 hover:animate-bounce"
         width="86px"
       >
         <use href="#arrow3"></use>
@@ -319,14 +338,14 @@
         <div class="relative text-center min-w-[265px] flex-1">
           <svg
             viewBox="0 0 41.6 80.64"
-            class="absolute -scale-x-100 fill-black top-[267px] left-7"
+            class="absolute -scale-x-100 fill-black top-[267px] left-7 hover:animate-wiggle"
             width="60px"
           >
             <use href="#arrow4"></use>
           </svg>
           <svg
             viewBox="0 0 104 104"
-            class="absolute fill-primary hidden lg:block top-[705px] -right-[50px]"
+            class="absolute fill-primary hidden lg:block top-[705px] -right-[50px] hover:fill-secondary transition-colors"
             width="81px"
           >
             <use href="#plus"></use>
@@ -343,23 +362,25 @@
             SPRAWDŹ
           </button>
           <img
-            class="mx-auto"
+            class="mx-auto transition-transform hover:scale-110 duration-500"
             src="img/packs1.jpg"
             alt="garnier fructis cocoa butter hair food shampoo"
           />
         </div>
         <!-- col2 -->
         <div class="relative text-center min-w-[265px] flex-1">
-          <svg
-            viewBox="0 0 41.6 80.64"
-            class="absolute -rotate-90 fill-black top-[260px] left-0"
-            width="124px"
-          >
-            <use href="#arrow2"></use>
-          </svg>
+          <div class="absolute top-[260px] left-0 hover:animate-bounce1">
+            <svg
+              viewBox="0 0 41.6 80.64"
+              class="-rotate-90 fill-black"
+              width="124px"
+            >
+              <use href="#arrow2"></use>
+            </svg>
+          </div>
           <svg
             viewBox="0 0 104 104"
-            class="absolute fill-primary hidden lg:block top-[705px] -right-[22px]"
+            class="absolute fill-primary hidden lg:block top-[705px] -right-[22px] hover:fill-secondary transition-colors"
             width="81px"
           >
             <use href="#plus"></use>
@@ -376,7 +397,7 @@
             SPRAWDŹ
           </button>
           <img
-            class="mx-auto"
+            class="mx-auto transition-transform hover:scale-110 duration-500"
             src="img/packs2.jpg"
             alt="garnier fructis cocoa butter hair food conditioner"
           />
@@ -385,13 +406,15 @@
         <div
           class="relative text-center min-w-[265px] flex-1 grid grid-rows-[auto_auto_auto_auto_1fr]"
         >
-          <svg
-            viewBox="0 0 59.78 156.01"
-            class="absolute fill-black top-[350px] left-1/2 -translate-x-1/2"
-            width="82px"
-          >
-            <use href="#arrow5"></use>
-          </svg>
+          <div class="absolute top-[350px] left-1/2 -translate-x-1/2">
+            <svg
+              viewBox="0 0 59.78 156.01"
+              class="fill-black hover:animate-bounce1"
+              width="82px"
+            >
+              <use href="#arrow5"></use>
+            </svg>
+          </div>
           <p class="mb-4 h2 text-primary">Krok 3</p>
           <p class="mb-3 font-courgette text-3xl">Maska</p>
           <p class="text-primary min-h-[4lh]">
@@ -405,7 +428,7 @@
           </button>
           <div class="h-[650px] flex">
             <img
-              class="mx-auto self-end"
+              class="mx-auto self-end transition-transform hover:scale-110 duration-500"
               src="img/packs3.jpg"
               alt="garnier fructis cocoa butter hair food mask"
             />
@@ -424,11 +447,13 @@
         <div class="grid content-between min-w-[265px]">
           <p class="my-4 font-courgette text-6xl text-banana">Banan</p>
           <p class="mb-3">Odżywcza pielęgnacja do włosów bardzo suchych</p>
-          <img
-            src="img/banan.jpg"
-            alt="shampoo conditioner banana hair food"
-            class="mx-auto"
-          />
+          <div class="overflow-hidden mx-auto">
+            <img
+              src="img/banan.jpg"
+              alt="shampoo conditioner banana hair food"
+              class="transition-transform hover:scale-110 duration-500"
+            />
+          </div>
           <div class="mb-4 flex justify-center gap-4">
             <div>
               <p class="my-4 font-courgette text-3xl">Szampon</p>
@@ -452,11 +477,13 @@
         <div class="grid content-between min-w-[265px]">
           <p class="my-4 font-courgette text-6xl text-papaya">Papaya</p>
           <p class="mb-3">Regenerujące "menu" do włosów zniszczonych</p>
-          <img
-            src="img/papaya.jpg"
-            alt="shampoo conditioner papaya hair food"
-            class="mx-auto object-contain w-full"
-          />
+          <div class="overflow-hidden mx-auto">
+            <img
+              src="img/papaya.jpg"
+              alt="shampoo conditioner papaya hair food"
+              class="mx-auto object-contain w-full transition-transform hover:scale-110 duration-500"
+            />
+          </div>
           <div class="mb-4 flex justify-center gap-4">
             <div>
               <p class="my-4 font-courgette text-3xl">Szampon</p>
@@ -482,11 +509,13 @@
           <p class="mb-3">
             Nawilżająca pielęgnacja do włosów normalnych i suchych
           </p>
-          <img
-            src="img/aloes.jpg"
-            alt="shampoo conditioner aloe hair food"
-            class="mx-auto"
-          />
+          <div class="overflow-hidden mx-auto">
+            <img
+              src="img/aloes.jpg"
+              alt="shampoo conditioner aloe hair food"
+              class="transition-transform hover:scale-110 duration-500"
+            />
+          </div>
           <div class="mb-4 flex justify-center gap-4">
             <div>
               <p class="my-4 font-courgette text-3xl">Szampon</p>
