@@ -11,10 +11,10 @@ const animationObserver = new IntersectionObserver((entries) => {
       delay = '500ms',
       'iteration-count': iterationCount = '1',
       direction = 'normal',
-      'fill-mode': fillMode = 'backwards',
+      fill = 'backwards',
     } = entry.target.dataset;
     if (entry.isIntersecting) {
-      entry.target.style.animation = `${animation} ${duration} ${timingFunction} ${delay} ${iterationCount} ${direction} ${fillMode}`;
+      entry.target.style.animation = `${animation} ${duration} ${timingFunction} ${delay} ${iterationCount} ${direction} ${fill}`;
     }
   });
 });

@@ -76,7 +76,7 @@
     </div>
 
     <!-- ______________________________________________________ section2 ______________________________________________________ -->
-    <div class="mt-20">
+    <div class="mt-20 group snap-start">
       <p
         data-animation="fade-in"
         data-duration="1s"
@@ -104,7 +104,7 @@
           </svg>
           <img
             width="181px"
-            class="absolute -top-[12%] w-[clamp(120px,28%,181px)] transition-transform hover:scale-110 duration-500"
+            class="absolute -top-[12%] w-[clamp(120px,28%,181px)] transition-transform group-hover:scale-110 duration-500"
             src="img/pochodzenie-naturalne-logo.svg"
             alt="pochodzenie naturalne logo"
           />
@@ -130,22 +130,21 @@
         </div>
         <div data-animation="fade-from-right" class="relative">
           <svg
-            data-animation="bounce1"
-            data-delay="1s"
-            class="absolute fill-primary"
+            class="absolute fill-primary "
             viewBox="0 0 53.23 54.69"
             width="132px"
+            data-animation="bounce1" data-delay="1s" data-fill="forwards"
           >
             <use href="#arrow1"></use>
           </svg>
           <img
             src="img/packshots.png"
             alt="packaging"
-            class="transition-transform hover:scale-110 duration-500"
+            class="transition-transform group-hover:scale-110 duration-500"
           />
         </div>
       </div>
-      <div class="mx-auto hover:animate-bounce1 w-min">
+      <div class="mx-auto group-hover:animate-bounce1 w-min">
         <svg
           viewBox="0 0 123.3 64.92"
           width="180px"
@@ -158,7 +157,7 @@
 
     <!-- ______________________________________________________ section3 ______________________________________________________ -->
 
-    <div class="max-w-[1300px] mx-auto mt-20">
+    <div class="max-w-[1300px] mx-auto mt-20 group">
       <p
         data-animation="fade-in"
         data-delay="0s"
@@ -210,7 +209,7 @@
           </div>
         </div>
       </div>
-      <div data-animation="bounce1" data-delay="500ms" class="mx-auto w-min">
+      <div  class="mx-auto w-min group-hover:animate-bounce1">
         <svg
           viewBox="0 0 53.23 54.69"
           class="-scale-x-100 fill-primary my-12"
@@ -270,7 +269,7 @@
 
     <!-- ______________________________________________________ section5 ______________________________________________________ -->
 
-    <div>
+    <div class="group">
       <p
         data-animation="fade-in"
         data-delay="0s"
@@ -368,7 +367,7 @@
       </div>
       <svg
         viewBox="0 0 40.32 53.76"
-        class="relative mx-auto fill-primary mt-6 hover:animate-bounce"
+        class="relative mx-auto fill-primary mt-6 group-hover:animate-bounce"
         width="86px"
       >
         <use href="#arrow3"></use>
@@ -398,18 +397,18 @@
         <!-- col1 -->
         <div
           data-animation="fade-from-left"
-          class="relative text-center min-w-[265px] flex-1"
+          class="relative text-center min-w-[265px] flex-1 group"
         >
           <svg
             viewBox="0 0 41.6 80.64"
-            class="absolute -scale-x-100 fill-black top-[267px] left-7 hover:animate-wiggle"
+            class="absolute -scale-x-100 fill-black top-[267px] left-7 group-hover:animate-wiggle z-20"
             width="60px"
           >
             <use href="#arrow4"></use>
           </svg>
           <svg
             viewBox="0 0 104 104"
-            class="absolute fill-primary hidden lg:block top-[705px] -right-[50px] hover:fill-secondary transition-colors"
+            class="absolute fill-primary hidden lg:block top-[705px] -right-[50px] group-hover:fill-secondary transition-colors"
             width="81px"
           >
             <use href="#plus"></use>
@@ -421,12 +420,12 @@
             wygładza włosy!
           </p>
           <button
-            class="bg-white mt-6 mb-28 inline-block justify-self-center rounded-lg border-2 border-primary px-6 py-2 font-bold text-primary"
+            class="bg-white mt-6 mb-28 inline-block justify-self-center rounded-lg border-2 border-primary px-6 py-2 font-bold text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-500"
           >
             SPRAWDŹ
           </button>
           <img
-            class="mx-auto transition-transform hover:scale-110 duration-500"
+            class="mx-auto transition-transform group-hover:scale-110 duration-500"
             src="img/packs1.jpg"
             alt="garnier fructis cocoa butter hair food shampoo"
           />
@@ -436,9 +435,9 @@
           data-animation="fade-in"
           data-delay="0s"
           data-duration="1s"
-          class="relative text-center min-w-[265px] flex-1"
+          class="relative text-center min-w-[265px] flex-1 group"
         >
-          <div class="absolute top-[260px] left-0 hover:animate-bounce1">
+          <div class="absolute top-[260px] left-0 group-hover:animate-bounce1 z-20">
             <svg
               viewBox="0 0 41.6 80.64"
               class="-rotate-90 fill-black"
@@ -449,7 +448,7 @@
           </div>
           <svg
             viewBox="0 0 104 104"
-            class="absolute fill-primary hidden lg:block top-[705px] -right-[22px] hover:fill-secondary transition-colors"
+            class="absolute fill-primary hidden lg:block top-[705px] -right-[22px] group-hover:fill-secondary transition-colors"
             width="81px"
           >
             <use href="#plus"></use>
@@ -461,12 +460,12 @@
             się we włosy, wygładza je oraz ułatwia ich rozczesywanie!
           </p>
           <button
-            class="bg-white mt-6 mb-28 inline-block justify-self-center rounded-lg border-2 border-primary px-6 py-2 font-bold text-primary"
+            class="bg-white mt-6 mb-28 inline-block justify-self-center rounded-lg border-2 border-primary px-6 py-2 font-bold text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-500"
           >
             SPRAWDŹ
           </button>
           <img
-            class="mx-auto transition-transform hover:scale-110 duration-500"
+            class="mx-auto transition-transform group-hover:scale-110 duration-500"
             src="img/packs2.jpg"
             alt="garnier fructis cocoa butter hair food conditioner"
           />
@@ -474,12 +473,12 @@
         <!-- col3 -->
         <div
           data-animation="fade-from-right"
-          class="relative text-center min-w-[265px] flex-1 grid grid-rows-[auto_auto_auto_auto_1fr]"
+          class="relative text-center min-w-[265px] flex-1 grid grid-rows-[auto_auto_auto_auto_1fr] group"
         >
           <div class="absolute top-[350px] left-1/2 -translate-x-1/2">
             <svg
               viewBox="0 0 59.78 156.01"
-              class="fill-black hover:animate-bounce1"
+              class="fill-black group-hover:animate-bounce1"
               width="82px"
             >
               <use href="#arrow5"></use>
@@ -492,13 +491,13 @@
             pielęgnację uzupełnij o maskę Cocoa Butter Hair Food!
           </p>
           <button
-            class="bg-white mt-6 mb-28 inline-block justify-self-center rounded-lg border-2 border-primary px-6 py-2 font-bold text-primary"
+            class="bg-white mt-6 mb-28 inline-block justify-self-center rounded-lg border-2 border-primary px-6 py-2 font-bold text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-500"
           >
             SPRAWDŹ
           </button>
           <div class="h-[650px] flex overflow-hidden">
             <img
-              class="mx-auto self-end transition-transform hover:scale-110 duration-500"
+              class="mx-auto self-end transition-transform group-hover:scale-110 duration-500"
               src="img/packs3.jpg"
               alt="garnier fructis cocoa butter hair food mask"
             />
